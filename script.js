@@ -1,4 +1,4 @@
-emailjs.init("RKyEnT69OEcb1vZow");
+emailjs.init("Enter Here Your Email.js Public Key");
 
 let generatedOTP = "";
 
@@ -30,7 +30,7 @@ function sendOTP() {
     generatedOTP = generateOTP();
     loader.style.display = "block";
 
-    emailjs.send("service_eb30xn1", "template_qshcbwl", {
+    emailjs.send("Enter Here Your Email.js Service ID", "Enter Here Your Email.js Template ID", {
         to_email: email,
         otp: generatedOTP
     })
